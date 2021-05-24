@@ -1,7 +1,10 @@
+import Sidebar from "./Components/Sidebar";
+
 function App() {
   return (
-    <div>
-      <h1>STYLED COMPONENT</h1>
+    <div className='App'>
+      <Sidebar/>
+      
     </div>
   );
 }
