@@ -54,14 +54,29 @@ const NavigationStyled = styled.nav`
   align-items: center;
   height: 100%;
   width: 100%;
+  border-right: 1px solid var(--border-color);
+
 
   .avatar {
-    width: 80%;
+    width: 100%;
     border-bottom: 1px solid var(--border-color);
+    text-align: center;
+    padding: 2rem 0;
+
     img {
-      width: 100%;
+      width: 80%;
       border-radius: 50%;
       border: 8px solid var(--border-color);
+    }
+  }
+  .nav-items{
+    width: 100%;
+    text-align: center;
+    li{
+      display: block;
+      a{
+        display: block;
+      }
     }
   }
 `;
