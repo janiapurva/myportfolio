@@ -8,7 +8,7 @@ import LinkedinIcon from "@material-ui/icons/LinkedIn";
 function HomePage() {
   return (
     <HomePageStyled>
-      <div className="p-particles-js">
+      <div className="particle-con">
         <Particle />
       </div>
       <div className="typography">
@@ -17,7 +17,7 @@ function HomePage() {
         </h1>
         <p>
           Full stack developer with extensive background in various coding
-          languages. 
+          languages.
         </p>
         <div className="icons">
           <a href="https://twitter.com/janiapurva" className="icon i-twitter">
@@ -26,7 +26,10 @@ function HomePage() {
           <a href="https://github.com/janiapurva" className="icon i-github">
             <GithubIcon />
           </a>
-          <a href="https://www.linkedin.com/in/apurva-jani-19b72428/" className="icon i-linkedin">
+          <a
+            href="https://www.linkedin.com/in/apurva-jani-19b72428/"
+            className="icon i-linkedin"
+          >
             <LinkedinIcon />
           </a>
         </div>
@@ -51,30 +54,48 @@ const HomePageStyled = styled.header`
     transform: translate(-50%, -50%);
     text-align: center;
     width: 80%;
-    
-    .icons{
+
+    .icons {
       display: flex;
       justify-content: center;
-      margin-top:1rem;
-      .icon{
-        border:2px solid var(--border-color);
+      margin-top: 1rem;
+      .icon {
+        border: 2px solid var(--border-color);
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        transition: all .4s ease-in-out;
+        transition: all 0.4s ease-in-out;
         cursor: pointer;
 
-        &:hover{
-          border:2px solid var(--primary-color);
+        &:hover {
+          border: 2px solid var(--primary-color);
           color: var(--primary-color);
         }
-        &:not(:last-child){
+        &:not(:last-child) {
           margin-right: 1rem;
         }
-svg{
-  margin: .5rem;
-}
+        svg {
+          margin: 0.5rem;
+        }
+      }
+      .i-twitter{
+        :hover{
+          border: 2px solid #00acee;
+          color: #00acee;
+        }
+      }
+      .i-github{
+        :hover{
+          border: 2px solid green;
+          color: green;
+        }
+      }
+      .i-linkedin{
+        :hover{
+          border: 2px solid #0e76a8;
+          color: #0e76a8;
+        }
       }
 
     }
