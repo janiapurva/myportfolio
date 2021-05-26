@@ -1,26 +1,27 @@
 import React from "react";
 import styled from "styled-components";
 import SecondPic from "../img/SecondPic.JPG";
+import PrimaryButton from "./PrimaryButton";
 
 function ImageSection() {
   return (
     <ImageSectionStyled>
       <div className="left-content">
-        <img src={SecondPic} alt="resume image" />
+        <img src={SecondPic} alt="resumeI" />
       </div>
       <div className="right-content">
         <h4>
-          I'm <span>Apurva Jani</span>
+          I am <span>Apurva Jani</span>
         </h4>
 
         <p className="paragraph">
           Full stack developer with extensive background in various coding
           languages. Experience building and developing applications to align
-          with project and user requirements. Specializes in
-          JavaScript, TypeScript, ReactJS, NodeJS and Express. Professional
-          strengths include creative problem-solving, leadership, teamwork and
-          time management. Detail-oriented mindset from 5+ years of experience
-          in senior roles within the Hospitality industry.
+          with project and user requirements. Specializes in JavaScript,
+          TypeScript, ReactJS, NodeJS and Express. Professional strengths
+          include creative problem-solving, leadership, teamwork and time
+          management. Detail-oriented mindset from 5+ years of experience in
+          senior roles within the Hospitality industry.
         </p>
         <div className="about-info">
           <div className="info-title">
@@ -31,9 +32,10 @@ function ImageSection() {
           <div className="info">
             <p>:Apurva Jani</p>
             <p>:English, Hindi, Gujarati</p>
-            <p>:Toronto,Canada</p>
+            <p>:Toronto, Canada</p>
           </div>
         </div>
+        <PrimaryButton title={'Download Resume'}/>
       </div>
     </ImageSectionStyled>
   );
@@ -43,8 +45,9 @@ const ImageSectionStyled = styled.div`
   display: flex;
   .left-content {
     width: 100%;
-    img {
+    img{
       width: 90%;
+      object-fit: cover;
     }
   }
   .right-content {
@@ -55,15 +58,24 @@ const ImageSectionStyled = styled.div`
         font-size: 2rem;
       }
     }
-    .paragraph{
+    .paragraph {
       padding: 1rem 0;
     }
     .about-info {
       display: flex;
-      .info-title, .info{
-p{
-  padding: 1rem 0;
-}
+      padding-bottom: 1.5rem;
+
+      .info-title {
+        padding-right: 3rem;
+        p{
+          font-weight: 600;
+        }
+      }
+      .info-title,
+      .info{
+        p{
+          padding: 0.3rem 0;
+        }
       }
     }
   }
