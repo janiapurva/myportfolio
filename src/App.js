@@ -47,7 +47,7 @@ function App() {
 const MainContentStyled = styled.main`
   position: relative;
   margin-left: 16.3rem;
-  min-height: 100vh;
+  min-height: 100%;
   .lines {
     position: absolute;
     min-height: 100vh;
