@@ -16,8 +16,7 @@ function HomePage() {
           Hi I'm <span>Apurva Jani</span>
         </h1>
         <p>
-          Full stack developer with extensive background in various coding
-          languages.
+          Full Stack Developer
         </p>
         <div className="icons">
           <a href="https://twitter.com/janiapurva" className="icon i-twitter">
