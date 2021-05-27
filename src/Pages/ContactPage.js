@@ -16,10 +16,8 @@ function ContactPage() {
       <ContactPageStyled>
         <InnerLayout className={"contact-section"}>
           <div className="left-content">
-            {/* <h2>email: jani.apurva@yahoo.com</h2> */}
             <ContactItem title={'Phone'} icon={phone} contact1={'+1(647)-655-8007'}/>
             <ContactItem title={'Email'} icon={email} contact1={'jani.apurva@yahoo.com'}/>
-
           </div>
         </InnerLayout>
       </ContactPageStyled>
@@ -27,17 +25,6 @@ function ContactPage() {
   );
 }
 const ContactPageStyled = styled.section`
-  .left-content {
-    /* margin-left: 2rem;
-    display: flex;
-    justify-content: space-between;
-    border: 1 px solid var(--primary-color);
-    color: var(--white-color);
-      font-size: 2rem;
-      padding: 1rem ;
-      display: contents; */
-
-    
-  }
+  
 `;
 export default ContactPage;
