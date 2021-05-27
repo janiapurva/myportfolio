@@ -15,8 +15,9 @@ const GlobalStyle = createGlobalStyle`
   --font-dark-color-2: #151515;
   --scrollbar-bg-color:#383838;
   --scrollbar-thump-color:#6b6b6b;
---scrollbar-track-color:#383838;
+  --scrollbar-track-color:#383838;
   --sidebar-dark-color: #191D2B; 
+  
 }
 
 *{
