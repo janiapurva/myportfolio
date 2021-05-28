@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { InnerLayout, MainLayout } from "../styles/Layout";
+import { InnerLayout} from "../styles/Layout";
 import Title from "./Title";
 import ProgressBar from "../Components/ProgressBar";
 function Skills() {
   return (
     <SkillsStyled>
-      <MainLayout>
-        <Title title={"Resume"} span={"Resume"} />
+      
+        <Title title={"My Skills"} span={"My Skills"} />
         <InnerLayout>
           <div className="skills">
             <ProgressBar title={"JAVASCRIPT"} width={"90%"} text={"90%"} />
@@ -33,7 +33,7 @@ function Skills() {
             <ProgressBar title={"CYPRESS"} width={"80%"} text={"80%"} />
           </div>
         </InnerLayout>
-      </MainLayout>
+  
     </SkillsStyled>
   );
 }
