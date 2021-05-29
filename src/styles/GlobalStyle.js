@@ -56,6 +56,10 @@ h6{
   font-size: 1.2rem;
   padding-bottom: .6rem;
 }
+//utilities
+.u-margin-bottom{
+  margin-bottom: 3rem;
+}
 
 `;
 

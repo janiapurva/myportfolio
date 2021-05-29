@@ -28,12 +28,13 @@ const ResumeItemStyled = styled.div`
     &::before {
       content: "";
       position: absolute;
-      left: 0;
+      left: -10px;
       top: 5px;
-      height: 17px;
-      width: 17px;
+      height: 15px;
+      width: 15px;
       border-radius: 50%;
       border: 2px solid var(--border-color);
+      background-color: var(--background-color-dark);
     }
     p {
       display: inline-block;
@@ -57,7 +58,7 @@ const ResumeItemStyled = styled.div`
       padding-bottom: 0.4rem;
     }
     h6 {
-      padding-bottom: 2rem;
+      padding-bottom: 1rem;
       font-size: 1.3rem;
     }
   }
