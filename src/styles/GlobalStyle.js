@@ -52,13 +52,13 @@ span{
   color: var(--primary-color);
 }
 h6{
-  color:var(--white-color);
+  color: var(--white-color);
   font-size: 1.2rem;
   padding-bottom: .6rem;
 }
 //utilities
 .u-margin-bottom{
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 `;
