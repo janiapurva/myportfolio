@@ -5,7 +5,7 @@ import Title from "../Components/Title";
 import portfolios from "../data/portfolios";
 import { InnerLayout, MainLayout } from "../styles/Layout";
 
-const allButtons = ["All", "Animation", ...portfolios.map(item => item.category)]
+const allButtons = ["All", "Animation", ...new Set(portfolios.map(item => item.category))]
 function PortfolioPage() {
   const [menuItem, SetMenuItems] = useState(portfolios);
   const [button, setButtons]= useState(allButtons);
@@ -13,6 +13,7 @@ function PortfolioPage() {
   const filter = (button) =>{
     if(button === 'All') {
       SetMenuItems(portfolios)
+      return;
     }
     const filterdData = portfolios.filter(item => item.categorey === button);
     SetMenuItems(filterdData);
