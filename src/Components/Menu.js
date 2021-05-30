@@ -41,7 +41,9 @@ const MeniItemStyled = styled.div`
     img{
       width: 100%;
       height: 30vh;
-      object-fit: cover;
+      /* object-fit: cover; */
+      /* object-fit: scale-down; */
+      object-fit: fill;
     }
     ul{
       display: none;

@@ -11,6 +11,9 @@ function PortfolioPage() {
   const [button, setButtons]= useState(allButtons);
 
   const filter = (button) =>{
+    if(button === 'All') {
+      SetMenuItems(portfolios)
+    }
     const filterdData = portfolios.filter(item => item.categorey === button);
     SetMenuItems(filterdData);
   }
@@ -18,7 +21,7 @@ function PortfolioPage() {
     <MainLayout>
       <Title title={"Portfolios"} span={"Portfolios"} />
       <InnerLayout>
-        <Button filter={filter} button={button}/>
+        {/* <Button filter={filter} button={button}/> */}
         <Menu menuItem={menuItem} />
       </InnerLayout>
     </MainLayout>
