@@ -49,6 +49,8 @@ const MenuItemStyled = styled.div`
     }
     ul{
       display: none;
+      transform: translateY(-100px);
+      transition: all .4s ease-in-out;
     }
     .portfolio-image{
       &::before{
@@ -63,6 +65,38 @@ const MenuItemStyled = styled.div`
       }
     }
     .portfolio-image:hover{
+      ul{
+        transform: translateY(0);
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .4s ease-in-out;
+        li{
+          background-color: var(--border-color);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 1rem;
+          border-radius: 50%;
+          width: 3rem;
+          height: 3rem;
+          margin: 0 .5rem;
+          transition: all .4s ease-in-out;
+          a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        svg{
+          font-size: 2rem;
+        }
+      }
       &::before{
         height: calc(100% - 32%);
         width: calc(100% - 4%);
@@ -73,9 +107,7 @@ const MenuItemStyled = styled.div`
         transition: all .4s ease-in-out;
       }
     }
-
     }
-
     }
   }
 }
