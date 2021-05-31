@@ -23,8 +23,12 @@ padding: .4rem 2rem;
 font-size: inherit;
 color: var(--white-color);
 cursor: pointer;
+transition: all .4s ease-in-out;
+&:active, &:focus{
+  background-color: var(--primary-color);
+}
 &:hover{
-  background-color: var(--color-primary);
+  background-color: var(--primary-color);
 }
 &:not(:last-child){
   margin-right: .6rem;

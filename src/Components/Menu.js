@@ -4,7 +4,7 @@ import Github from "@material-ui/icons/GitHub";
 
 function Menu({ menuItem }) {
   return (
-    <MeniItemStyled>
+    <MenuItemStyled>
       {menuItem.map((item) => {
         return (
           <div className="grid-item" key={item.id}>
@@ -12,22 +12,24 @@ function Menu({ menuItem }) {
               <div className="portfolio-image">
                 <img src={item.image} alt="" />
                 <ul>
-                <li>
-                  {" "}
-                  <a href={item.link}><Github/></a>
-                </li>
-              </ul>
+                  <li>
+                    {" "}
+                    <a href={item.link}>
+                      <Github />
+                    </a>
+                  </li>
+                </ul>
               </div>
-             <h6>{item.title}</h6>
+              <h6>{item.title}</h6>
             </div>
           </div>
         );
       })}
-    </MeniItemStyled>
+    </MenuItemStyled>
   );
 }
 
-const MeniItemStyled = styled.div`
+const MenuItemStyled = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
@@ -47,6 +49,31 @@ const MeniItemStyled = styled.div`
     }
     ul{
       display: none;
+    }
+    .portfolio-image{
+      &::before{
+        content: "";
+        position: absolute;
+        left: 2%;
+        top: 4%;
+        height: 0;
+        width: 0;
+        transition: all .4s ease-in-out;
+
+      }
+    }
+    .portfolio-image:hover{
+      &::before{
+        height: calc(100% - 32%);
+        width: calc(100% - 4%);
+        background-color: white;
+        opacity: 0.9;
+        transform-origin: left;
+        transform: scale(1);
+        transition: all .4s ease-in-out;
+      }
+    }
+
     }
 
     }
