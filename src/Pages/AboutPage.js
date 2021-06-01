@@ -15,5 +15,7 @@ function AboutPage() {
   );
 }
 
-const AboutStyled = styled.section``;
+const AboutStyled = styled.section`
+
+`;
 export default AboutPage;
