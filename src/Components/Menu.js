@@ -61,7 +61,6 @@ const MenuItemStyled = styled.div`
         height: 0;
         width: 0;
         transition: all .4s ease-in-out;
-
       }
     }
     .portfolio-image:hover{
@@ -87,10 +86,20 @@ const MenuItemStyled = styled.div`
           height: 3rem;
           margin: 0 .5rem;
           transition: all .4s ease-in-out;
+          &:hover{
+            background-color: var(--primary-color);
+          }
           a{
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: all .4s ease-in-out;
+
+          }
+        }
+        li:hover{
+          svg{
+            color: var(--white-color);
           }
         }
         svg{
