@@ -1,17 +1,35 @@
 import Sidebar from "./Components/Sidebar";
 import styled from "styled-components";
 import HomePage from "./Pages/HomePage";
-import { Route, Switch } from "react-router";
+import { Route, Switch as Switching } from "react-router";
+import Switch from "@material-ui/core/Switch";
 import AboutPage from "./Pages/AboutPage";
 import ResumePage from "./Pages/ResumePage";
 import PortfoliosPage from "./Pages/PortfolioPage";
 import BlogsPage from "./Pages/BlogsPage";
 import ContactPage from "./Pages/ContactPage";
+import Brightness4Icon from "@material-ui/icons/Brightness4";
 
 function App() {
   return (
     <div className="App">
       <Sidebar />
+      <div className="theme">
+        <div className="light-dark-mode">
+          <div className="left-content">
+            <Brightness4Icon />
+          </div>
+          <div className="right-content">
+            <Switch
+              value=""
+              // checked={}
+              // onChange={}
+              inputProps={{ "aria-label": "" }}
+              size="medium"
+            />
+          </div>
+        </div>
+      </div>
       <MainContentStyled>
         <div className="lines">
           <div className="line-1"></div>
@@ -19,7 +37,8 @@ function App() {
           <div className="line-3"></div>
           <div className="line-4"></div>
         </div>
-        <Switch>
+
+        <Switching>
           <Route path="/" exact>
             <HomePage />
           </Route>
@@ -32,13 +51,13 @@ function App() {
           <Route path="/portfolios" exact>
             <PortfoliosPage />
           </Route>
-          <Route path="/blogs" exact>
+          {/* <Route path="/blogs" exact>
             <BlogsPage/>
-          </Route>
+          </Route> */}
           <Route path="/contact" exact>
-            <ContactPage/>
+            <ContactPage />
           </Route>
-        </Switch>
+        </Switching>
       </MainContentStyled>
     </div>
   );
@@ -47,13 +66,16 @@ function App() {
 const MainContentStyled = styled.main`
   position: relative;
   margin-left: 16.3rem;
-  min-height: 100%;
+  min-height: 100vh;
+
   .lines {
     position: absolute;
-    min-height: 100vh;
+    min-height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    opacity: 0.4;
+    z-index: -1;
     .line-1,
     .line-2,
     .line-3,

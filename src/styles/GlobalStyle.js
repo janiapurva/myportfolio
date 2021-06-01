@@ -3,20 +3,59 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
 :root{
   --primary-color: #007bff;
-  --secondary-color: #6c757d;
-  --background-dark-color: #10121A;
-  --background-dark-grey: #191D2B;
-  --border-color: #2e344e;
-  --background-light-color: #F1F1F1;
-  --background-light-color-2: rgba(3,127,255,.3);
-  --white-color: #FFF;
-  --font-light-color: #a4acc4;
-  --font-dark-color: #313131;
-  --font-dark-color-2: #151515;
-  --scrollbar-bg-color:#383838;
-  --scrollbar-thump-color:#6b6b6b;
-  --scrollbar-track-color:#383838;
-  --sidebar-dark-color: #191D2B; 
+    --primary-color-light: #057FFF;
+    --secondary-color: #6c757d;
+    --background-dark-color: #10121A;
+    --background-dark-grey: #191D2B;
+    --border-color: #2e344e;
+    --background-light-color: #F1F1F1;
+    --background-light-color-2: rgba(3,127,255,.3);
+    --white-color: #FFF;
+    --font-light-color: #a4acc4;
+    --font-dark-color: #313131;
+    --font-dark-color-2: #151515;
+    --sidebar-dark-color: #191D2B;
+    --scrollbar-bg-color: #383838;
+    --scrollbar-thump-color: #6b6b6b;
+    --scrollbar-track-color: #383838;
+  
+}
+.light-theme{
+    --primary-color: #007bff;
+    --primary-color-light: #057FFF;
+    --secondary-color: #6c757d;
+    --background-dark-color: #10121A;
+    --background-dark-grey: #191D2B;
+    --border-color: #f1f1f1;
+    --background-light-color: #F1F1F1;
+    --background-light-color-2: rgba(3,127,255,.3);
+    --white-color: #151515;
+    --font-light-color: #a4acc4;
+    --font-dark-color: #313131;
+    --font-dark-color-2: #151515;
+    --sidebar-dark-color: #E4E4E4;
+    --scrollbar-bg-color: #383838;
+    --scrollbar-thump-color: #6b6b6b;
+    --scrollbar-track-color: #383838;
+  
+}
+.dark-theme{
+  --primary-color: #007bff;
+    --primary-color-light: #057FFF;
+    --secondary-color: #6c757d;
+    --background-dark-color: #10121A;
+    --background-dark-grey: #191D2B;
+    --border-color: #2e344e;
+    --background-light-color: #F1F1F1;
+    --background-light-color-2: rgba(3,127,255,.3);
+    --white-color: #FFF;
+    --font-light-color: #a4acc4;
+    --font-dark-color: #313131;
+    --font-dark-color-2: #151515;
+    --sidebar-dark-color: #191D2B;
+    --scrollbar-bg-color: #383838;
+    --scrollbar-thump-color: #6b6b6b;
+    --scrollbar-track-color: #383838;
   
 }
 
@@ -42,6 +81,10 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
   border-radius: 10px;
   background-color: #6b6b6b;
+}
+body::-webkit-scrollbar-track{
+  border-radius: 10px;
+  background-color: #383838;
 }
 
 a{
@@ -69,6 +112,25 @@ h6{
 .u-margin-bottom{
   margin-bottom: 4rem;
 }
+//Floting Toggler
+.light-dark-mode{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    background-color: var(--background-light-color-2);
+    width: 6.5rem;
+    height: 2.5rem;
+    z-index: 15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg{
+      display: flex;
+      align-items: center;
+      font-size: 1.7rem;
+      color: var(--white-color);
+    }
+  }
 
 `;
 
