@@ -25,6 +25,8 @@ function ContactPage() {
   );
 }
 const ContactPageStyled = styled.section`
-  
+  @media screen and (max-width: 978px){
+    grid-template-columns: repeat(1,1fr);
+  }
 `;
 export default ContactPage;

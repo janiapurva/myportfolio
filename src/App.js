@@ -8,7 +8,7 @@ import Switch from "@material-ui/core/Switch";
 import AboutPage from "./Pages/AboutPage";
 import ResumePage from "./Pages/ResumePage";
 import PortfoliosPage from "./Pages/PortfolioPage";
-import BlogsPage from "./Pages/BlogsPage";
+// import BlogsPage from "./Pages/BlogsPage";
 import ContactPage from "./Pages/ContactPage";
 import MenuIcon from '@material-ui/icons/Menu';
 import Brightness4Icon from "@material-ui/icons/Brightness4";

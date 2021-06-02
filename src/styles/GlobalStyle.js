@@ -136,6 +136,7 @@ h6{
   position: absolute;
   right: 5%;
   top: 3%;
+  display: none;
   z-index: 15;
   svg{
     font-size: 3rem;
@@ -147,7 +148,9 @@ h6{
 }
 
 @media screen and (max-width:1200px){
-  
+  .ham-burger-menu{
+    display: block;
+  }
   }
 
   //Global Media Queries
