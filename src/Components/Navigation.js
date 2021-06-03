@@ -26,7 +26,7 @@ function Navigation() {
         </li>
         <li className="nav-item">
           <NavLink to="/portfolios" activeClassName="active-class" exact>
-            Portfolios
+            Portfolio
           </NavLink>
         </li>
         {/* <li className="nav-item">

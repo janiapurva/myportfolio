@@ -21,7 +21,7 @@ function PortfolioPage() {
   // }
   return (
     <MainLayout>
-      <Title title={"Portfolios"} span={"Portfolios"} />
+      <Title title={"Portfolio"} span={"Portfolio"} />
       <InnerLayout>
         {/* <Button filter={filter} button={button}/> */}
         <Menu menuItem={menuItem} />
