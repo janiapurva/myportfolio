@@ -1,3 +1,5 @@
-#route divert
-[build]
-[[redirects]] from = "/*" to = "index.html" status = 200
+# routing internally.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
