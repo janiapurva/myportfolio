@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import SecondPic from "../img/SecondPic.JPG";
+// import SecondPic from "../img/SecondPic.JPG";
 import PrimaryButton from "./PrimaryButton";
 
 function ImageSection() {
   return (
     <ImageSectionStyled>
       <div className="left-content">
-        <img src={SecondPic} alt="resumeI" />
+        {/* <img src={SecondPic} alt="resumeI" /> */}
       </div>
       <div className="right-content">
         <h4>
