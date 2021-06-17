@@ -15,9 +15,9 @@ function Skills() {
             <ProgressBar title={"TYPESCRIPT"} width={"70%"} text={"70%"} />
             <ProgressBar title={"NODE JS"} width={"85%"} text={"85%"} />
             <ProgressBar title={"REACT JS"} width={"85%"} text={"85%"} />
-            <ProgressBar title={"Redux"} width={"80%"} text={"80%"} />
+            <ProgressBar title={"REDUX"} width={"80%"} text={"80%"} />
             <ProgressBar title={"EXPRESS JS"} width={"80%"} text={"80%"} />
-            <ProgressBar title={"SpringBoot"} width={"75%"} text={"75%"} />
+            <ProgressBar title={"SPRINGBOOT"} width={"75%"} text={"75%"} />
             <ProgressBar title={"POSTGRESQL"} width={"80%"} text={"80%"} />
             <ProgressBar title={"RUBY ON RAILS"} width={"70%"} text={"70%"} />
             <ProgressBar title={"JQUERY"} width={"75%"} text={"75%"} />
