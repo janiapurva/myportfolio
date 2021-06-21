@@ -38,7 +38,7 @@ function Resume() {
         </div>
         <div className="resume-content">
           <ResumeItem
-            year={"2017 - Present"}
+            year={"2017 - 2020"}
             title={"Lead Front Desk Agent"}
             subTitle={"Hilton Garden Inn Toronto"}
             // text={"ssssfdsffsfsfs"}
