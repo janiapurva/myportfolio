@@ -15,6 +15,23 @@ function Resume() {
       <Title title={"Resume"} span={"Resume"} />
       <InnerLayout>
         <div className="small-title">
+          <SmallTitle icon={briefCase} title={"Working Experience"} />
+        </div>
+        <div className="resume-content">
+          <ResumeItem
+            year={"2021 - Present"}
+            title={"Full Stack Developer"}
+            subTitle={"Leadbright Inc."}
+            // text={"ssssfdsffsfsfs"}
+          />
+          <ResumeItem
+            year={"2017 - 2020"}
+            title={"Lead Front Desk Agent"}
+            subTitle={"Hilton Garden Inn Toronto"}
+            // text={"ssssfdsffsfsfs"}
+          />
+        </div>
+        <div className="small-title">
           <SmallTitle icon={school} title={"Educational Qualifications"} />
         </div>
         <div className="resume-content">
@@ -32,23 +49,6 @@ function Resume() {
               // text={"ssssfdsffsfsfs"}
             />
           </div>
-        </div>
-        <div className="small-title">
-          <SmallTitle icon={briefCase} title={"Working Experience"} />
-        </div>
-        <div className="resume-content">
-          <ResumeItem
-            year={"2017 - 2020"}
-            title={"Lead Front Desk Agent"}
-            subTitle={"Hilton Garden Inn Toronto"}
-            // text={"ssssfdsffsfsfs"}
-          />
-          <ResumeItem
-            year={"2016 - 2017"}
-            title={"Housekeeping Supervisor"}
-            subTitle={"Hilton Garden Inn Toronto"}
-            // text={"ssssfdsffsfsfs"}
-          />
         </div>
       </InnerLayout>
     </ResumeStyled>
