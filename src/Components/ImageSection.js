@@ -20,8 +20,8 @@ function ImageSection() {
           with project and user requirements. Specializes in JavaScript,
           TypeScript, ReactJS, NodeJS and Express. Professional strengths
           include creative problem-solving, leadership, teamwork and time
-          management. Detail-oriented mindset from 5+ years of experience in
-          senior roles within the Hospitality industry.
+          management. Detail-oriented mindset from 2 years of experience in I.T
+          industry.
         </p>
         <div className="about-info">
           <div className="info-title">
@@ -35,7 +35,7 @@ function ImageSection() {
             <p>:Toronto, Canada</p>
           </div>
         </div>
-        <PrimaryButton title={'Download Resume'}/>
+        <PrimaryButton title={"Download Resume"} />
       </div>
     </ImageSectionStyled>
   );
@@ -43,24 +43,24 @@ function ImageSection() {
 const ImageSectionStyled = styled.div`
   margin-top: 5rem;
   display: flex;
-  @media screen and (max-width:1000px){
-  flex-direction: column;
-  .left-content{
-    margin-bottom: 2rem;
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    .left-content {
+      margin-bottom: 2rem;
+    }
   }
-}
   .left-content {
     width: 100%;
-    img{
+    img {
       width: 90%;
       object-fit: cover;
     }
   }
   .right-content {
-    h4{
+    h4 {
       font-size: 2rem;
       color: var(--white-color);
-      span{
+      span {
         font-size: 2rem;
       }
     }
@@ -73,13 +73,13 @@ const ImageSectionStyled = styled.div`
 
       .info-title {
         padding-right: 3rem;
-        p{
+        p {
           font-weight: 600;
         }
       }
       .info-title,
-      .info{
-        p{
+      .info {
+        p {
           padding: 0.3rem 0;
         }
       }
