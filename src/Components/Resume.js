@@ -25,6 +25,12 @@ function Resume() {
             // text={"ssssfdsffsfsfs"}
           />
           <ResumeItem
+            year={"2020 - 2021"}
+            title={"Full Stack Developer"}
+            subTitle={"Lighthouse Labs."}
+            // text={"ssssfdsffsfsfs"}
+          />
+          <ResumeItem
             year={"2017 - 2020"}
             title={"Lead Front Desk Agent"}
             subTitle={"Hilton Garden Inn Toronto"}
