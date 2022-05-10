@@ -36,6 +36,12 @@ function Resume() {
             subTitle={"Hilton Garden Inn Toronto"}
             // text={"ssssfdsffsfsfs"}
           />
+          <ResumeItem
+            year={"2016 - 2020"}
+            title={"Housekeeping Supervisor"}
+            subTitle={"Hilton Garden Inn Toronto"}
+            // text={"ssssfdsffsfsfs"}
+          />
         </div>
         <div className="small-title">
           <SmallTitle icon={school} title={"Educational Qualifications"} />
